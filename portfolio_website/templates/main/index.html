@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Hugo 0.88.1">
-        <title>Cover Template · Bootstrap v5.1</title>
+        <title>Vlad Nikitin | Python developer</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
@@ -50,30 +50,19 @@
 
     <body class="d-flex h-100 text-center text-white bg-dark">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="mb-auto">
-                <div>
-                    <h3 class="float-md-start mb-0">Vlad Nikitin</h3>
-                    <nav class="nav nav-masthead justify-content-center float-md-end">
-                        <a class="nav-link active" aria-current="page" href="#">About me</a>
-                        <a class="nav-link" href="#">My Experience</a>
-                        <a class="nav-link" href="#">Contact</a>
-                    </nav>
-                </div>
-            </header>
+            {% include 'includes/header.html' %}
 
             <main class="px-3">
                 <h1>Hello there 👋</h1>
                 <p class="lead">This is my personal website,
-                    click the buttom below to get in touch with me.</p>
+                    click the button below to get in touch with me.</p>
                 <p class="lead">
-                    <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Send Vlad a message</a>
+                    <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Send me a message</a>
                 </p>
+
             </main>
 
-            <footer class="mt-auto text-white-50">
-                <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
-                        href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-            </footer>
+            {% include 'includes/footer.html' %}
         </div>
     </body>
 

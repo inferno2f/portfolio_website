@@ -1,0 +1,14 @@
+<header class="mb-auto">
+    <div>
+        <a style='color:white' href='{% url 'main:index' %}'>
+        <h3 class="float-md-start mb-0">Vlad Nikitin</h3>
+        </a>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+        {% with request.resolver_match.view_name as view_name %}
+            <a class="nav-link" aria-current="page" href="#">About me</a>
+            <a class="nav-link {% if view_name == 'main:experience' %}active{% endif %}" href="{% url 'main:experience' %}">My Experience</a>
+            <a class="nav-link" href="#">Contact</a>
+        {% endwith %}
+        </nav>
+    </div>
+</header>

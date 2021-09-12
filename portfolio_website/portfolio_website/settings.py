@@ -25,8 +25,13 @@ SECRET_KEY = 'gr=m)aoh!o^wz7%y7d!4_7acnw8rm@nk=yfm%-mz5-*u*22(4p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    ]
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+    ]
 
 # Application definition
 
@@ -38,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
@@ -120,8 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/'),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
